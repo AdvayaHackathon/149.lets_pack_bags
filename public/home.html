@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home | Let's Pack Bags</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Plan Your Trip</h1>
+    <form id="tripForm">
+      <input type="number" id="people" placeholder="Number of People" min="1" required>
+      <input type="date" id="startDate" required>
+      <input type="number" id="days" placeholder="Number of Days" min="1" required>
+      <select id="placeSelect">
+        <option value="rajasthan">Rajasthan</option>
+        <option value="tamilnadu">Tamil Nadu</option>
+        <option value="kerala">Kerala</option>
+        <option value="assam">Assam</option>
+        <option value="himachal">Himachal Pradesh</option>
+        <option value="goa">Goa</option>
+      </select>
+      <button type="submit">Show Packages</button>
+    </form>
+    <div id="results"></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
